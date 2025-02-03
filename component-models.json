@@ -124,6 +124,10 @@
           {
             "name": "Large",
             "value": "large"
+          },
+          {
+            "name": "Tile List",
+            "value": "tile-list"
           }
         ]
       }
