@@ -34,3 +34,141 @@
   src: url('../fonts/roboto-regular.woff2') format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
+
+/* APTypeProDisplay fonts */
+@font-face {
+  font-family: APTypeProDisplay;
+  font-style: normal;
+  font-weight: 200;
+  font-display: swap;
+  src: url('../fonts/APTypeProDisplay-Light.woff2') format('woff2'),
+       url('../fonts/APTypeProDisplay-Light.woff') format('woff');
+}
+
+@font-face {
+  font-family: APTypeProDisplay;
+  font-style: italic;
+  font-weight: 200;
+  src: url('../fonts/APTypeProDisplay-LightItalic.woff2') format('woff2'),
+       url('../fonts/APTypeProDisplay-LightItalic.woff') format('woff');
+}
+
+@font-face {
+  font-family: APTypeProDisplay;
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('../fonts/APTypeProDisplay-Regular.woff2') format('woff2'),
+       url('../fonts/APTypeProDisplay-Regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: APTypeProDisplay;
+  font-style: italic;
+  font-weight: 400;
+  src: url('../fonts/APTypeProDisplay-RegularItalic.woff2') format('woff2'),
+       url('../fonts/APTypeProDisplay-RegularItalic.woff') format('woff');
+}
+
+@font-face {
+  font-family: APTypeProDisplay;
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('../fonts/APTypeProDisplay-Medium.woff2') format('woff2'),
+       url('../fonts/APTypeProDisplay-Medium.woff') format('woff');
+}
+
+@font-face {
+  font-family: APTypeProDisplay;
+  font-style: italic;
+  font-weight: 500;
+  src: url('../fonts/APTypeProDisplay-MediumItalic.woff2') format('woff2'),
+       url('../fonts/APTypeProDisplay-MediumItalic.woff') format('woff');
+}
+
+@font-face {
+  font-family: APTypeProDisplay;
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url('../fonts/APTypeProDisplay-Bold.woff2') format('woff2'),
+       url('../fonts/APTypeProDisplay-Bold.woff') format('woff');
+}
+
+@font-face {
+  font-family: APTypeProDisplay;
+  font-style: italic;
+  font-weight: 600;
+  src: url('../fonts/APTypeProDisplay-BoldItalic.woff2') format('woff2'),
+       url('../fonts/APTypeProDisplay-BoldItalic.woff') format('woff');
+}
+
+/* APTypeProText fonts */
+@font-face {
+  font-family: APTypeProText;
+  font-style: normal;
+  font-weight: 200;
+  font-display: swap;
+  src: url('../fonts/APTypeProText-Light.woff2') format('woff2'),
+       url('../fonts/APTypeProText-Light.woff') format('woff');
+}
+
+@font-face {
+  font-family: APTypeProText;
+  font-style: italic;
+  font-weight: 200;
+  src: url('../fonts/APTypeProText-LightItalic.woff2') format('woff2'),
+       url('../fonts/APTypeProText-LightItalic.woff') format('woff');
+}
+
+@font-face {
+  font-family: APTypeProText;
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('../fonts/APTypeProText-Regular.woff2') format('woff2'),
+       url('../fonts/APTypeProText-Regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: APTypeProText;
+  font-style: italic;
+  font-weight: 400;
+  src: url('../fonts/APTypeProText-RegularItalic.woff2') format('woff2'),
+       url('../fonts/APTypeProText-RegularItalic.woff') format('woff');
+}
+
+@font-face {
+  font-family: APTypeProText;
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('../fonts/APTypeProText-Medium.woff2') format('woff2'),
+       url('../fonts/APTypeProText-Medium.woff') format('woff');
+}
+
+@font-face {
+  font-family: APTypeProText;
+  font-style: italic;
+  font-weight: 500;
+  src: url('../fonts/APTypeProText-MediumItalic.woff2') format('woff2'),
+       url('../fonts/APTypeProText-MediumItalic.woff') format('woff');
+}
+
+@font-face {
+  font-family: APTypeProText;
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url('../fonts/APTypeProText-Bold.woff2') format('woff2'),
+       url('../fonts/APTypeProText-Bold.woff') format('woff');
+}
+
+@font-face {
+  font-family: APTypeProText;
+  font-style: italic;
+  font-weight: 600;
+  src: url('../fonts/APTypeProText-BoldItalic.woff2') format('woff2'),
+       url('../fonts/APTypeProText-BoldItalic.woff') format('woff');
+}

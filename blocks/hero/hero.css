@@ -1,6 +1,9 @@
 .hero-container .hero-wrapper {
   max-width: unset;
   padding: 0;
+  border-radius: 8px;
+  margin-top: 16px;
+  width: calc(100% - 96px);
 }
 
 .hero {

@@ -119,7 +119,7 @@ export default async function decorate(block) {
   nav.id = 'nav';
   while (fragment.firstElementChild) nav.append(fragment.firstElementChild);
 
-  const classes = ['brand', 'sections', 'tools'];
+  const classes = ['brand', 'sections', 'tools','break','sections','tools'];
   classes.forEach((c, i) => {
     const section = nav.children[i];
     if (section) section.classList.add(`nav-${c}`);
@@ -145,6 +145,16 @@ export default async function decorate(block) {
       });
     });
   }
+  //duplicate the navSections for the tools
+  const navTools = nav.querySelector('.nav-tools');
+  if (navTools) {
+    navTools.querySelectorAll(':scope .default-content-wrapper > ul > li').forEach((navTool) => {
+      if (navTool.querySelector('ul')) navTool.classList.add('nav-drop');
+    });
+  }
+
+
+  
 
   // hamburger for mobile
   const hamburger = document.createElement('div');
