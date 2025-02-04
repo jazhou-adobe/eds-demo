@@ -3,25 +3,109 @@
   margin: 0;
   padding: 0;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(257px, 1fr));
-  grid-gap: 24px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 32px;
+  max-width: 1170px;
+  margin: 0 auto;
+  background-color: white;
 }
 
 .cards > ul > li {
-  border: 1px solid #dadada;
-  background-color: var(--background-color);
+  border-radius: 8px;
+  overflow: hidden;
+  
+  transition: transform 0.2s ease;
 }
 
-.cards .cards-card-body {
-  margin: 16px;
+.cards > ul > li:hover {
+  transform: translateY(-4px);
 }
 
 .cards .cards-card-image {
   line-height: 0;
+  height: 200px;
+  overflow: hidden;
 }
 
-.cards > ul > li img {
+.cards .cards-card-image img {
   width: 100%;
-  aspect-ratio: 4 / 3;
+  height: 100%;
   object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.cards > ul > li:hover .cards-card-image img {
+  transform: scale(1.05);
+}
+
+.cards .cards-card-body {
+  padding-top: 24px;
+}
+
+.cards .cards-card-body p {
+  margin: 0;
+}
+
+.cards .cards-card-body p strong {
+  font-family: APTypeProDisplay, sans-serif;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 500;
+  letter-spacing: .8px;
+  color: #212129;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.cards .cards-card-body p:not(:first-child):not(.button-container) {
+  font-family: APTypeProText, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #31313D;
+  margin-bottom: 24px;
+}
+
+.cards .button-container {
+  margin-top: auto;
+}
+
+.cards .button-container a {
+  font-family: APTypeProText, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: #212129;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+}
+
+.cards .button-container a::before {
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg fill='%23dc1928' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M18.44 10.566l-.679-.714c-.011-.013-.028-.017-.044-.03L8.951.591a1.848 1.848 0 00-2.711 0l-.68.712a2.096 2.096 0 000 2.854L13.01 12l-7.45 7.84a2.098 2.098 0 000 2.857l.68.71c.747.79 1.961.79 2.71 0l8.767-9.227c.014-.014.033-.018.044-.033l.68-.712c.375-.396.56-.916.559-1.435a2.065 2.065 0 00-.56-1.435z'/%3E%3C/svg%3E");
+  background-size: 10px 10px;
+  content: "";
+  height: 10px;
+  transform: translate3d(-10px, 0, 0);
+  transition: transform .2s ease;
+  width: 10px;
+}
+
+.cards .button-container a:hover::before {
+  transform: translateX(4px);
+}
+
+@media (max-width: 900px) {
+  .cards > ul {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0 24px;
+  }
+}
+
+@media (max-width: 600px) {
+  .cards > ul {
+    grid-template-columns: 1fr;
+    grid-gap: 24px;
+    padding: 0 16px;
+  }
 }
