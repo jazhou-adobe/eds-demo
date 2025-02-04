@@ -128,11 +128,63 @@
           {
             "name": "Tile List",
             "value": "tile-list"
-          },
-          {
-            "name": "Overlay Teaser",
-            "value": "overlay-teaser"
-          },
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "teaser",
+    "fields": [
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "image",
+        "label": "Image",
+        "multi": false
+      },
+      {
+        "component": "richtext", 
+        "name": "description",
+        "label": "Description",
+        "valueType": "string"
+      },
+      {
+        "component": "collection",
+        "name": "links",
+        "label": "Links",
+        "schema": {
+          "fields": [
+            {
+              "component": "text",
+              "name": "text",
+              "label": "Link Text"
+            },
+            {
+              "component": "text", 
+              "name": "href",
+              "label": "Link URL"
+            }
+          ]
+        }
+      },
+      {
+        "component": "text",
+        "name": "buttonText",
+        "label": "Button Text",
+        "valueType": "string"
+      },
+      {
+        "component": "text",
+        "name": "buttonHref", 
+        "label": "Button URL",
+        "valueType": "string"
+      },
+      {
+        "component": "multiselect",
+        "name": "style",
+        "label": "Style",
+        "options": [
           {
             "name": "Image Right",
             "value": "image-right"
