@@ -151,20 +151,20 @@
       },
       {
         "component": "richtext",
-        "name": "links",
-        "label": "Links",
+        "name": "navList",
+        "label": "Nav List",
         "valueType": "string"
       },
       {
         "component": "text",
-        "name": "buttonText",
-        "label": "Button Text",
+        "name": "linkText",
+        "label": "linkText",
         "valueType": "string"
       },
       {
         "component": "text",
-        "name": "buttonHref", 
-        "label": "Button URL",
+        "name": "link", 
+        "label": "Link",
         "valueType": "string"
       },
       {
