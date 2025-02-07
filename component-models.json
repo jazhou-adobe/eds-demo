@@ -158,7 +158,7 @@
       {
         "component": "text",
         "name": "linkText",
-        "label": "linkText",
+        "label": "Link Text",
         "valueType": "string"
       },
       {
