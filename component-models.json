@@ -133,6 +133,7 @@
       }
     ]
   },
+  
   {
     "id": "teaser",
     "fields": [
@@ -255,6 +256,16 @@
         "value": "",
         "label": "Text",
         "valueType": "string"
+      }
+    ]
+  },
+  {
+    "id": "delivery-table",
+    "fields": [
+      {
+        "component": "text",
+        "name": "query",
+        "label": "Query URL"
       }
     ]
   }
