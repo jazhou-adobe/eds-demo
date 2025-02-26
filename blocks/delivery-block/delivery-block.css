@@ -1,0 +1,161 @@
+.tables-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    width: 100%;
+    border: 1px solid #ddd;
+    background: white;
+}
+
+/* Accordion Styles */
+.accordion-section {
+    border-bottom: 1px solid #ddd;
+}
+
+.accordion-section:last-child {
+    border-bottom: none;
+}
+
+.accordion-header {
+    width: 20%;
+    padding: 20px;
+    background-color: white;
+    border: none;
+    text-align: left;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.1em;
+    font-weight: 500;
+    color: #333;
+    transition: background-color 0.2s ease;
+}
+
+.accordion-header:hover {
+    background-color: #f8f8f8;
+}
+
+.accordion-arrow {
+    margin-left: 10px;
+    transition: transform 0.2s ease;
+    display: inline-block;
+    font-size: 0.8em;
+    color: #666;
+}
+
+.accordion-header[aria-expanded="true"] .accordion-arrow {
+    transform: rotate(180deg);
+}
+
+.accordion-content {
+    display: none;
+    padding: 0;
+    background-color: white;
+}
+
+/* Table Styles */
+.tables.tables--service {
+    width: 100%;
+}
+
+.tables.tables--service table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+/* Header styles */
+.tables.tables--service tr:first-child {
+    background-color: #c41e3a;
+    color: white;
+}
+
+.tables.tables--service th {
+    padding: 15px 20px;
+    text-align: left;
+    vertical-align: top;
+    border: 1px solid #ddd;
+    font-weight: normal;
+}
+
+.tables.tables--service tr:first-child th {
+    border-color: #c41e3a;
+}
+
+/* Links in header */
+.tables.tables--service tr:first-child th a {
+    color: white;
+    text-decoration: underline;
+}
+
+/* Row styles */
+.tables.tables--service tr:not(:first-child) {
+    background-color: #f5f5f5;
+}
+
+.tables.tables--service tr:not(:first-child):nth-child(even) {
+    background-color: white;
+}
+
+/* Cell styles */
+.tables.tables--service td {
+    padding: 15px 20px;
+    border: 1px solid #ddd;
+    vertical-align: top;
+}
+
+/* Text styles inside cells */
+.tables.tables--service td p {
+    margin: 0;
+    padding: 0;
+}
+
+.tables.tables--service td p:first-child {
+    display: none;
+}
+
+.tables.tables--service td p:last-child {
+    font-size: 0.95em;
+    line-height: 1.4;
+}
+
+/* Country column styles */
+.tables.tables--service tr:not(:first-child) th {
+    background-color: #f5f5f5;
+    font-weight: normal;
+}
+
+.tables.tables--service tr:not(:first-child):nth-child(even) th {
+    background-color: white;
+}
+
+/* Superscript styles */
+.tables.tables--service sup {
+    font-size: 0.75em;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+    top: -0.5em;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .accordion-header {
+        padding: 15px;
+        font-size: 1em;
+    }
+
+    .tables.tables--service {
+        overflow-x: auto;
+        display: block;
+    }
+    
+    .tables.tables--service table {
+        min-width: 800px;
+    }
+    
+    .tables.tables--service th,
+    .tables.tables--service td {
+        padding: 12px 15px;
+    }
+}
